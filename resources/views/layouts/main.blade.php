@@ -9,7 +9,7 @@
     <title>Base CRUD</title>
 </head>
 
-<body class="bg-info">
+<body class="bg-dark">
 
     @include('includes.header')
     <div class="container-fluid">
