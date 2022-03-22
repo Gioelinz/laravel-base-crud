@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="container">
-        <form action="">
-
+        <form action="{{ route('comics.store') }}" method="post">
+            @csrf
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Title</span>
                 <input type="text" class="form-control" placeholder="Enter Title" name="title" required>
@@ -23,7 +23,8 @@
 
             <div class="input-group mb-3">
                 <span class="input-group-text">€</span>
-                <input type="number" class="form-control" default="0" min="0" placeholder="Price" name="price" required>
+                <input type="number" class="form-control" default="0" min="0" step="0.01" placeholder="Price" name="price"
+                    required>
                 <span class="input-group-text">.00</span>
             </div>
 
