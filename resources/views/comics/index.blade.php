@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="d-flex justify-content-end p-3">
-        <a class="btn btn-lg btn-success" href="#">Aggiungi Comic</a>
+        <a class="btn btn-lg btn-success" href="{{ route('comics.create') }}">Aggiungi Comic</a>
     </div>
     <div class="row">
         @forelse ($comics as $comic)
