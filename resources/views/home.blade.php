@@ -7,7 +7,9 @@
                 <h1>All Comics by title</h1>
                 @forelse ($comics as $comic)
                     <a href="{{ route('comics.show', $comic) }}"
-                        class="list-group-item list-group-item-secondary list-group-item-action">{{ $comic->title }}</a>
+                        class="list-group-item list-group-item-secondary list-group-item-action">{{ $comic->title }}
+                        <img class="hover-image" src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
+                    </a>
                 @empty
                     <p>Nothing to see here.</p>
                 @endforelse
