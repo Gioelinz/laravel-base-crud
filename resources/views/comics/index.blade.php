@@ -10,7 +10,10 @@
                 <div class="card mb-3 overflow-auto">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="{{ $comic->thumb }}" class="img-fluid rounded-start" alt="{{ $comic->series }}">
+                            <a href="{{ route('comics.show', $comic) }}">
+                                <img src="{{ $comic->thumb }}" class="img-fluid rounded-start"
+                                    alt="{{ $comic->series }}">
+                            </a>
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
