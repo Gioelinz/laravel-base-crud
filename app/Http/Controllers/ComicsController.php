@@ -91,4 +91,14 @@ class ComicsController extends Controller
     {
         //
     }
+
+    /* NON RESOURCES */
+
+    public function home()
+    {
+
+        $comics = Comic::all();
+
+        return view('home', compact('comics'));
+    }
 }

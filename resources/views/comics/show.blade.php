@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary" href="{{ route('comics.index') }}">Back</a>
+                <a class="btn btn-primary" href="{{ URL::previous() }}">Back</a>
             </div>
         </div>
     </div>
