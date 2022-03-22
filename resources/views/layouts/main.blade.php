@@ -9,11 +9,15 @@
     <title>Base CRUD</title>
 </head>
 
-<body>
+<body class="bg-info">
 
     @include('includes.header')
+    <div class="container-fluid">
+        <div class="bg-secondary p-3 mt-5 rounded-3">
 
-    @yield('content')
+            @yield('content')
+        </div>
+    </div>
 
 </body>
 
