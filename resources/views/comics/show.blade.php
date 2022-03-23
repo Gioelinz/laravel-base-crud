@@ -12,6 +12,7 @@
                         </div>
                         <div class="col-md-10">
                             <div class="card-body">
+                                @include('includes.modal-confirm')
                                 <h5 class="card-title">{{ $comic->title }}</h5>
                                 <p class="card-text">Series: <strong>{{ $comic->series }}</strong></p>
                                 <p class="card-text">{{ $comic->description }}</p>
@@ -28,6 +29,8 @@
                     </div>
                 </div>
                 <a class="btn btn-primary" href="{{ URL::previous() }}">Back</a>
+                <a class="btn btn-info" href="{{ route('comics.index') }}">Comics</a>
+
             </div>
         </div>
     </div>
