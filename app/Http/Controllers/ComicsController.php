@@ -141,7 +141,7 @@ class ComicsController extends Controller
     public function home()
     {
 
-        $comics = Comic::all();
+        $comics = Comic::orderBy('title')->get();
 
         return view('home', compact('comics'));
     }

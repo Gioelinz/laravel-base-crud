@@ -11262,6 +11262,13 @@ a.list-group-item:hover .hover-image {
   display: block;
 }
 
+img.preview {
+  position: absolute;
+  right: -30%;
+  top: -50%;
+  height: 291px;
+}
+
 @-webkit-keyframes scale-in-hor-left {
   0% {
     transform: scaleX(0) translateY(50%);

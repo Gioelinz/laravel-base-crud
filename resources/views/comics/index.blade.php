@@ -16,7 +16,7 @@
                     <div class="row g-0">
                         <div class="col-md-4">
                             <a href="{{ route('comics.show', $comic) }}">
-                                <img src="{{ $comic->thumb }}" class="img-fluid rounded-start"
+                                <img style="max-height: 291px" src="{{ $comic->thumb }}" class="img-fluid rounded-start"
                                     alt="{{ $comic->series }}">
                             </a>
                         </div>
