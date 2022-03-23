@@ -43,7 +43,6 @@
                 <textarea class="form-control" name="description" required>{{ $comic->description }}</textarea>
             </div>
             <div class="d-flex justify-content-end gap-2">
-                <button class="btn btn-danger mt-3" type="reset">Reset</button>
                 <button class="btn btn-success mt-3" type="submit">Conferma</button>
                 <a class="btn btn-warning mt-3" href="{{ route('comics.index') }}">Torna
                     indietro</a>
